@@ -19,3 +19,15 @@ Route::get('/', function () {
 });
 
 Route::resource("/students",StudentController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::middleware(['auth', 'user-access:user'])->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    });
+    
+   
+    

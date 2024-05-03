@@ -28,8 +28,8 @@
     <div class="row">
         <div class="col-md-3">
             <div class="sidebar">
-                <a class="active" href="#home">Home</a>
-                <a href="">student</a>
+                <a class="active" href="/">Home</a>
+                <a href="/students">student</a>
                 <a href="">Docter</a>
                 <a href="">Courses</a>
                 <a href="">Enrollment</a>
